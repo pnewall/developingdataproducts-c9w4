@@ -1,0 +1,12 @@
+name: Passenger
+title: Passenger
+username:
+account: pnewall
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1595356
+bundleId: 2673691
+url: https://pnewall.shinyapps.io/Passenger/
+when: 1576536874.11973
+asMultiple: FALSE
+asStatic: FALSE

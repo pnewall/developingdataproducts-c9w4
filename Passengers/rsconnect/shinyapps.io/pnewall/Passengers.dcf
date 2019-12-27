@@ -1,0 +1,13 @@
+name: Passengers
+title: Passengers
+username:
+account: pnewall
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1606377
+bundleId: 2694553
+url: https://pnewall.shinyapps.io/Passengers/
+when: 1577469235.91979
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .Rbuildignore|.RData|DESCRIPTION|NAMESPACE
