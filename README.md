@@ -6,5 +6,5 @@ assignment of the Developing Data Products course.
 
 The application can be viewed at https://pnewall.shinyapps.io/Passengers
 
-The documentation can be found in the man directory of this repository and is split over two files, namely ui.Rd 
-and server.Rd.
+The documentation can be found in the man directory of this repository and is split over two files, namely 
+server.Rd and ui.Rd.
