@@ -5,3 +5,6 @@ The files in this repository comprise the shiny application which is the first p
 assignment of the Developing Data Products course.
 
 The application can be viewed at https://pnewall.shinyapps.io/Passengers
+
+The documentation can be found in the man directory of this repository and is split over two files, namely ui.Rmd 
+and server.Rmd.
