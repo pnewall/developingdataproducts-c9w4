@@ -47,10 +47,9 @@ Plots two 3D scatter charts side by side.  Each plots survived (green) vs perish
 Despite the three dimensions, there is still some over-plotting, hence the opacity.
 The first chart analyses the combined influence of the Age, Gender & Family Members predictors.
 The second chart analyses the combined influence of the Age, Port of Embarcation & Spouses/Siblings
-predictors.  As these are 3D charts, the mouse can be used to move the chart around in its 3D space
-#' and so alter perspectives. 
+predictors. 
 
-Outputs for tab 3 - Decision Tree
+Outputs for tab 3 - Decision Tree -
 
 Uses the rattle package and the fancyRpartPlot function
 to generate a full decision tree.

@@ -58,21 +58,6 @@ if (!"sm" %in% installed.packages()) {
 }
 library(sm)
 
-if (!"magrittr" %in% installed.packages()) {
-    install.packages("magrittr")
-}
-library(magrittr)
-
-if (!"htmltools" %in% installed.packages()) {
-    install.packages("htmltools")
-}
-library(htmltools)
-
-if (!"tools" %in% installed.packages()) {
-    install.packages("tools")
-}
-library(tools)
-
 #' ui.R
 #'
 #' @param Sex/Gender - female/male
@@ -105,7 +90,6 @@ library(tools)
 #' 3 - Decision tree of probabilities for the current data slice
 #'
 #' @export
-
 ui <- (fluidPage(
 
     # Application title
@@ -117,7 +101,7 @@ ui <- (fluidPage(
     sidebarLayout(
         
         position = "left", fluid = TRUE,
-    
+        
         sidebarPanel(
             h4("De-select or slide buttons closer together to look at a smaller dataset"),
             
@@ -158,13 +142,11 @@ ui <- (fluidPage(
                       tabPanel("3D Analysis",
                                br(),
                                fluidRow(
-                                   column(6, plotlyOutput("ageSexParch"), height = "1000px"),
-                                   column(6, plotlyOutput("ageEmbarkedSibSp"), height = "1000px")
+                                   column(6, plotlyOutput("ageSexParch"), height = "700px"),
+                                   column(6, plotlyOutput("ageEmbarkedSibSp"), height = "700px")
                                )
                       ),
-                      tabPanel("Decision Tree", plotOutput("dTree", height = "700px")),
-                      tabPanel("UI Help", includeHTML("man/uird.html")),
-                      tabPanel("Server Help", includeHTML("man/serverrd.html"))
+                      tabPanel("Decision Tree", plotOutput("dTree", height = "700px"))
                  ),
                  width = 10
         )        

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: server</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for server"><tr><td>server</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>server.R</h2>
+
+<h3>Description</h3>
+
+<p>This Shiny application uses an adapted version of the Titanic passenger dataset on Kaggle to
+demonstrate how analyses and predictions can be made part of an interactive Web-based user
+experience.
+</p>
+<p>The server function tests for the presence of the dataset file in the current working 
+directory and downloads if not there.  It then generates a dummy id for each passenger record 
+before calling the following functions:
+</p>
+<p>tfit -
+uses rpart to generate the decision tree model for the whole dataset
+</p>
+<p>tpred - 
+returns a prediction based on that model for whatever slice of data is sent 
+to the function
+</p>
+<p>tfilter - 
+reactive function to slice the data based on the curren parameter values
+</p>
+<p>survivors - 
+reactive function to slice the data returned by tfilter so that it contains 
+only records for survivors
+</p>
+<p>Then the script generates the output for the 3 tabs as follows:
+</p>
+<p>Output for tab 1 - Survival by Age Group 
+</p>
+<p>Updates the headline comparing the number of passengers and overall probability 
+of survival for the current dataset with those of the whole dataset
+</p>
+<p>Output for tab 2 - 3D Analysis
+</p>
+<p>Plots two 3D scatter charts side by side.  Each plots survived (green) vs perished (red).
+Despite the three dimensions, there is still some over-plotting, hence the opacity.
+The first chart analyses the combined influence of the Age, Gender &amp; Family Members predictors.
+The second chart analyses the combined influence of the Age, Port of Embarcation &amp; Spouses/Siblings
+predictors. 
+</p>
+<p>Outputs for tab 3 - Decision Tree -
+</p>
+<p>Uses the rattle package and the fancyRpartPlot function
+to generate a full decision tree.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+server(input, output)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>input</code></td>
+<td>
+<p>- parameters input by ui.R</p>
+</td></tr>
+<tr valign="top"><td><code>output</code></td>
+<td>
+<p>- output to tabs etc</p>
+</td></tr>
+</table>
+
+
+</body></html>

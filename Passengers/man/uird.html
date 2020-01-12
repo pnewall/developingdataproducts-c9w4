@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: ui.R</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for ui"><tr><td>ui</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>ui.R</h2>
+
+<h3>Description</h3>
+
+<p>This Shiny application uses an adapted version of the Titanic passenger dataset on Kaggle to
+demonstrate how analyses and predictions can be made part of an interactive Web-based user
+experience.
+</p>
+<p>The ui function defines the page layout for the Shiny application.  It places a parameter 
+panel on the left-hand side leaving space for 3 tabs over the rest of the page.  The initial 
+parameter settings and view display the whole dataset.  Users are then free to adjust any of 
+the parameters and so slice the current data.  As the view of the data changes, so too will 
+the probability of survival and the content of the 3 tabs.
+</p>
+<p>The 3 tabs are:
+</p>
+<p>1 - Histogram of passengers vs survivors
+</p>
+<p>2 - 3D charts showing the influence of the predictor variables on survival
+</p>
+<p>3 - Decision tree of probabilities for the current data slice
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+ui
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>Sex/Gender</code></td>
+<td>
+<p>- female/male</p>
+</td></tr>
+<tr valign="top"><td><code>Class</code></td>
+<td>
+<p>- passenger's class of travel - 1, 2 or 3</p>
+</td></tr>
+<tr valign="top"><td><code>Embarked</code></td>
+<td>
+<p>- port of embarcation, one of Cherbourg, Queenstown or Southampton</p>
+</td></tr>
+<tr valign="top"><td><code>SibSp</code></td>
+<td>
+<p>- Nr of Siblings or Spouses accompanying - 1 to 10</p>
+</td></tr>
+<tr valign="top"><td><code>Parch</code></td>
+<td>
+<p>- Nr of Parents or Children accompanying - 1 to 10</p>
+</td></tr>
+</table>
+
+
+<h3>Format</h3>
+
+<p>An object of class <code>shiny.tag.list</code> (inherits from <code>list</code>) of length 3.</p>
+
+
+</body></html>

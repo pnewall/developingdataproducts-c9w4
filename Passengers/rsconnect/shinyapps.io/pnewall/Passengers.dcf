@@ -5,9 +5,9 @@ account: pnewall
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1606377
-bundleId: 2694553
+bundleId: 2723866
 url: https://pnewall.shinyapps.io/Passengers/
-when: 1577469235.91979
+when: 1578867960.64385
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .Rbuildignore|.RData|DESCRIPTION|NAMESPACE
